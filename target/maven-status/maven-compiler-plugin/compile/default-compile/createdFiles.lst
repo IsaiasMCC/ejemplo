@@ -1,0 +1,14 @@
+com\mycompany\reproductormusicapatrones\EstadoReproduciendo.class
+com\mycompany\reproductormusicapatrones\IReproductorMusica.class
+com\mycompany\reproductormusicapatrones\ReproductorConLetra.class
+com\mycompany\reproductormusicapatrones\ReproductorMusicaReal.class
+com\mycompany\reproductormusicapatrones\IEstadoReproduccion.class
+com\mycompany\reproductormusicapatrones\EstadoDetenido.class
+com\mycompany\reproductormusicapatrones\ReproductorConVideo.class
+com\mycompany\reproductormusicapatrones\ReproductorMusicaPatrones.class
+com\mycompany\reproductormusicapatrones\Presentation$1.class
+com\mycompany\reproductormusicapatrones\ReproductorDecorador.class
+com\mycompany\reproductormusicapatrones\EstadoPausado.class
+com\mycompany\reproductormusicapatrones\ReproductorMusicaProxy.class
+com\mycompany\reproductormusicapatrones\Presentation.class
+com\mycompany\reproductormusicapatrones\ReproductorConAudio.class
