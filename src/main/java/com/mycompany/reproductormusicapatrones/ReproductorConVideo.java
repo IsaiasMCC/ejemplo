@@ -13,9 +13,9 @@ public class ReproductorConVideo extends ReproductorDecorador{
         this.urlVideo = urlVideo;
     }
     
-    public String reproducir() {
+    public void reproducir() {
         //se agrega video
-        return super.reproducir();
+        super.reproducir();
     }
     
     public String getVideo() {

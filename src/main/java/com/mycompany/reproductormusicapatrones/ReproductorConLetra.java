@@ -12,11 +12,11 @@ public class ReproductorConLetra extends ReproductorDecorador {
         super(reproductor);
     }
 
-    public String reproducir() {
+    public void reproducir() {
         //se agrego letra
-        return super.reproducir();
+        super.reproducir();
     }
-    
+
     public String getLetra() {
         return this.letra;
     }

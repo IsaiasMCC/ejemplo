@@ -13,9 +13,9 @@ public class ReproductorConAudio extends ReproductorDecorador {
         this.volumen = volumen;
     }
 
-    public String reproducir() {
+    public void reproducir() {
         //se subio el volumen
-        return super.reproducir();
+        super.reproducir();
     }
 
     public int getVolumen() {

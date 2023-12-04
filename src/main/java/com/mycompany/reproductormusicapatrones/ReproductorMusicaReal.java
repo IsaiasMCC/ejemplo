@@ -1,39 +1,49 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.reproductormusicapatrones;
 
 /**
  *
  * @author isais
  */
-public class ReproductorMusicaReal implements IReproductorMusica, IEstadoReproduccion {
-    private String cancion;
-    private IEstadoReproduccion estado;
-    
+public class ReproductorMusicaReal implements IReproductorMusica{
+
+    public String cancion;
+    public IEstadoReproduccion estado;
+    public String image;
+    public String mensaje;
+
     public ReproductorMusicaReal(String cancion) {
+
         this.cancion = cancion;
-        this.estado = new EstadoDetenido();
+        this.estado = new EstadoDetenido(this);
+        this.image = "";
+        this.mensaje = "";
     }
-    
+
     public void cambiarEstado(IEstadoReproduccion estado) {
         this.estado = estado;
     }
-    
-    @Override
-    public String reproducir() {
-        return this.estado.reproducir();
+
+    //agregar al diagrama
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
     }
 
     @Override
-    public String detener() {
-        return this.estado.detener();
+    public void reproducir() {
+        this.estado.reproducir();
     }
 
-    @Override
-    public String pausar() {
-        return this.estado.pausar();
+    public void detener() {
+        this.estado.detener();
     }
-    
+
+    public void pausar() {
+        this.estado.pausar();
+    }
+
 }

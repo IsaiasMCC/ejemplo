@@ -13,8 +13,8 @@ public class ReproductorMusicaProxy implements IReproductorMusica{
     }
     
     @Override
-    public String reproducir() {
+    public void reproducir() {
         //System.out.println("Iniciando Reproducción");
-        return this.reproductorReal.reproducir();
+        this.reproductorReal.reproducir();
     }
 }

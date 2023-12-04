@@ -4,20 +4,25 @@ package com.mycompany.reproductormusicapatrones;
  *
  * @author isais
  */
-class EstadoDetenido implements IEstadoReproduccion {
+class EstadoDetenido extends IEstadoReproduccion {
 
+    public EstadoDetenido( ReproductorMusicaReal reproductor) {
+        super(reproductor);
+    }
     @Override
-    public String reproducir() {
-        return ("Iniciando la reproducción");
+    public void reproducir() {
+        this.reproductor.cambiarEstado(new EstadoReproduciendo(reproductor));
+        this.reproductor.setMensaje("Iniciando la reproducción");
+        this.reproductor.setImage("src/main/resources/images/reproduciendo.png");
     }
 
     @Override
-    public String pausar() {
-        return ("No se puede pausar, el reproductor está detenido");
+    public void pausar() {
+        this.reproductor.setMensaje("No se puede pausar, el reproductor está detenido");
     }
 
     @Override
-    public String detener() {
-        return ("Ya estamos detenidos");
+    public void detener() {
+        this.reproductor.setMensaje("Ya estamos detenidos");
     }
 }

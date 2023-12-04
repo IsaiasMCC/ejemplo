@@ -13,7 +13,7 @@ public class ReproductorDecorador implements IReproductorMusica {
     }
 
     @Override
-    public String reproducir() {
-        return this.reproductor.reproducir();
+    public void reproducir() {
+        this.reproductor.reproducir();
     }
 }
